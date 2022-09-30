@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function abc(){
+            console.log("gfgrer")
+        }
+
+        let vaaa= function () {
+console.log("abc")
+}
+vaaa()
+
+function student(first,second){
+    this.first = first
+    this.second = second
+}
+let newmem=new student('rama','chandra')
+console.log(newmem)
+
+    </script>
+</head>
+<body>
+    <!-- <script src="./script.js"> -->
+        <input type="text" onclick="abc()" value="onclick">
+<br><br>
+        <input type="text" onfocus="abc()" value="onfocus">
+
+        <br><br>
+        <input type="text" onblur="abc()" value="onblur">
+
+        <br><br>
+        <input type="text" onchange="abc()" value="onchange">
+        <br><br>
+        <input type="text" ondblclick="abc()" value="ondbclick">
+        <br><br>
+        <input type="text" onmouseout="abc()" value="onmouseover">
+        <br><br>
+        <input type="number" onkeypress="abc()" value="">
+
+       
+<script>
+
+let y=undefined
+        
+        if(y){
+            console.log("yew")
+        }
+        else {
+            console.log("nooo")
+        }
+
+
+        console.log('ss'+5)
+//     let x='qwerty'
+//     {
+//        let x=100;
+//     }
+// console.log(x.startsWith('qwe'))
+// let ob = {
+//     ac:[1,2,3,4,5]
+// }
+//     console.log(ob.ac);
+
+let detail={
+    fir:4555555,
+    sec:5,
+    disp:function (){
+        console.log(this.fir+' '+this.sec)
+}
+}
+detail.disp(detail.fir)
+
+
+let  arr=[1,2,3,4,5,6,7]
+arr.forEach(function(element){
+    console.log(element)
+})
+   
+
+   let arr1=[4,6,45,47,42,41]
+   let arr2=arr.filter(function(element){
+    return element%2=== 0
+    })
+    console.log(arr2)
+
+let array=[9,8,7,4,5,6,1,2,3,1]
+let array2=array.map(function(element){
+    return element+2
+})
+console.log(array2)
+
+let m=5
+{
+    m=10
+}
+console.log(m)
+
+
+</script>
+
+</body>
+</html>
